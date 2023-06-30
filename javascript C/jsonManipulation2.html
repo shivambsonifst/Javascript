@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Manipulation 2</title>
+    <style>
+        h2 {
+            text-align: center;
+        }
+
+        .container {
+            margin: 0px 30%;
+            border: 1px solid grey;
+            padding: 7px;
+        }
+
+        .container1 {
+            margin: 5px 20%;
+            border: 1px solid grey;
+            padding: 7px;
+        }
+
+        .items {
+
+
+            margin: 5px 15%;
+            display: flex;
+        }
+
+        label,
+        input {
+            margin: 10px;
+        }
+
+        button {
+            margin: 10px;
+        }
+
+        table {
+            height: 30%;
+            width: 70%;
+            margin: 2px 15%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th,
+        td {
+
+            padding: 10px 16px;
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Add data</h2>
+        <div class="items">
+            <label for="text">Product ID:- </label>
+            <input type="text" name="productId" id="productId" required>
+        </div>
+        <div class="items">
+            <label for="text">Enter Part Number:- </label>
+            <input type="text" name="partNumber" id="partNumber" required>
+        </div>
+        <div class="items">
+            <label for="text">Enter Name:- </label>
+            <input type="text" name="productName" id="productName" required>
+        </div>
+        <div class="items">
+            <label for="text">Select Size:- </label>
+            <input type="radio" id="radio1" name="size" value="10">
+            <label for="radio1">10</label>
+            <input type="radio" id="radio2" name="size" value="20">
+            <label for="radio2">20</label>
+            <input type="radio" id="radio3" name="size" value="30">
+            <label for="radio3">30</label>
+            <input type="radio" id="radio4" name="size" value="40">
+            <label for="radio4">40</label>
+        </div>
+        <div class="items">
+            <label for="text">Select Color:- </label>
+            <input type="checkbox" id="check1" name="colors" value="Red">
+            <label for="checkbox">Red</label>
+            <input type="checkbox" id="check2" name="colors" value="Blue">
+            <label for="checkbox">Blue</label>
+            <input type="checkbox" id="check3" name="colors" value="Green">
+            <label for="checkbox">Green</label>
+            <input type="checkbox" id="check4" name="colors" value="Yellow">
+            <label for="checkbox">Yellow</label>
+        </div>
+        <div class="items">
+            <label for="text">Description:- </label>
+            <textarea name="description" id="description" cols="30" rows="10" required></textarea>
+        </div>
+        <div class="items">
+            <h3 id="searchMessage"></h3>
+            <button id="addProductItems" onclick="addProduct()">Add Product</button>
+            <button id="resetProductItems" onclick="resetFunctionButton()">Reset</button>
+
+
+            <h3 id="addMessage"></h3>
+        </div>
+    </div>
+
+    <div class="container1">
+        <h2>Product Table </h2>
+        
+        <table id="mainTable">
+        </table>
+    </div>
+
+
+
+    <script src="/javascript C/jsonManipulation2.js"></script>
+</body>
+
+</html>

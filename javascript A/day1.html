@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/javascript A/day1.js"></script>
+    <title>Document</title>
+
+
+<style>
+    label{
+        margin: 10px;
+    }
+    input{
+        margin: 10px;
+    }
+    button{
+        margin: 10px;
+    }
+</style>
+
+</head>
+
+<body>
+
+    <!-- <div class="container">
+
+        <p id="demo">A Paragraph</p>
+        <button type="button" onclick="myFunction()">Try it</button>    
+
+    </div> -->
+
+
+    <div class="container" style="margin: 20px;">
+        <form action="/index.html" method="post" onsubmit="event.preventDefault();"> 
+            <div> 
+                <label for="date" class="date">Date</label>
+                <input type="date" name="date" id="date" min="2000-01-01" max="2030-12-31" required >
+
+                <div >
+                    <label for="datetime-local" class="datetime-local">Datetime-local</label>
+                    <input type="datetime-local" name="datetime" id="datetime" min="2000-01-01T00:00" max="2030-12-31T00:00" required>
+                </div>
+                <div>
+                    <label for="email" class="email">Email</label>
+                    <input type="email" name="email" placeholder="example@gmail.com" id="email" required>
+                </div>
+                <div>
+                    <label for="month" class="month">Month</label>
+                    <input type="month" name="month" id="month" min="2000-01" required>
+                </div>
+                <div>
+                    <label for="number" class="number">Number</label>
+                    <input type="number" name="number" id="number" required>
+                </div>
+                <div>
+                    <label for="range" class="range">Range</label>
+                    <input type="range" name="range" id="range" value="0" min="0" max="100" oninput="this.nextElementSibling.value = this.value" required>
+                    <output>0</output>
+                </div>
+                <div>
+                    <label for="tel" class="tel">Telephone</label>
+                    <input type="tel" name="tel" id="tel" placeholder="99999 99999" min="10" max="10" required>
+                </div>
+                <div>
+                    <label for="url" class="url">Url</label>
+                    <input type="url" name="url" placeholder="https://www.example.com" id="url" required>
+                </div>
+                <div>
+                    <label for="week" class="week">Week</label>
+                    <input type="week" name="week" id="week" min="2000-W01" max="2030-W30" required>
+                </div>
+                <button type="submit" onclick="myForm()" id="submit">Submit</button>
+        </form>
+
+    </div>
+
+
+</body>
+
+</html>

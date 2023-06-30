@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeScript</title>
+    <style>
+        h2 {
+            text-align: center;
+        }
+
+        .container {
+            margin: 0px 30%;
+            border: 1px solid grey;
+            padding: 7px;
+        }
+
+        .items {
+
+
+            margin: 5px 10%;
+            display: flex;
+        }
+
+        label,
+        input {
+            margin: 10px;
+        }
+
+        button {
+            margin: 10px;
+        }
+
+        table {
+            height: 30%;
+            width: 70%;
+            margin: 2px 15%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th,
+        td {
+
+            padding: 10px 16px;
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Add Product</h2>
+        <div class="items">
+            <label for="text">Product ID:- </label>
+            <input type="number" name="productId" id="productId" required>
+        </div>
+        <div class="items">
+            <label for="text">Enter Part Number:- </label>
+            <input type="number" name="partNumber" id="partNumber" required>
+        </div>
+        <div class="items">
+            <label for="text">Enter Name:- </label>
+            <input type="text" name="productName" id="productName" required>
+        </div>
+        <div class="items">
+            <label for="text">Select Size:- </label>
+            <input type="radio" id="size1" name="size" value="10" required>
+            <label for="radio1">10</label>
+            <input type="radio" id="size2" name="size" value="20" required>
+            <label for="radio2">20</label>
+            <input type="radio" id="size3" name="size" value="30" required>
+            <label for="radio3">30</label>
+            <input type="radio" id="size4" name="size" value="40" required>
+            <label for="radio4">40</label>
+        </div>
+        <div class="items">
+            <label for="text">Select Color:- </label>
+            <input type="checkbox" id="color1" name="colors" value="Red" required>
+            <label for="checkbox">Red</label>
+            <input type="checkbox" id="color2" name="colors" value="Blue" required>
+            <label for="checkbox">Blue</label>
+            <input type="checkbox" id="color3" name="colors" value="Green" required>
+            <label for="checkbox">Green</label>
+            <input type="checkbox" id="color4" name="colors" value="Yellow" required>
+            <label for="checkbox">Yellow</label>
+        </div>
+        <div class="items">
+            <label for="text">Description:- </label>
+            <textarea name="description" id="description" cols="30" rows="10" required></textarea>
+        </div>
+        <div class="items">
+            <button id="addProductItems" onclick="inventory.addPoduct()">Add</button>
+            <button id="modifyProductItems" onclick="inventory.showProductToModify()">Modify</button>
+            <button id="saveProductItems" onclick="inventory.saveFunction()">Save</button>
+            <button id="removeProductItems" onclick="inventory.deletePoduct()">Delete</button>
+            <button id="searchProductItems" onclick="inventory.searchProduct()">Search</button>
+           
+            <button id="resetProductItems" onclick="inventory.resetFunctionButton()">Reset</button>
+        </div>
+        <div class="items">
+        <button class="sorting" id="sortBypartNumberProductItems" onclick="inventory.sortBypartNumberFunction()">Sort By PartNumber</button>
+        <button class="sorting" id="sortByNameProductItems" onclick="inventory.sortByNameFunction()" >Sort By Name</button>
+        <button id="allProductItems" onclick="inventory.showProducts()">All Products</button>
+    </div>
+
+        <div class="items">
+            <h3 id="addMessage"></h3>
+        </div>
+    </div>  
+
+    <div class="container2">
+        <h2>Product Table </h2>
+       
+        <table id="mainTable">
+        </table>
+    </div>
+
+
+    <script src="product.js"></script>
+</body>
+
+</html>

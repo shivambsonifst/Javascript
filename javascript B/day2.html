@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/javascript B/day2.js"></script>
+    <title>Day 2</title>
+
+    <style>
+        .container {
+            margin: 10px 10px;
+            display: flex;
+            align-items: flex-start;
+
+        }
+
+        label,
+        button {
+            margin: 5px;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- On click event -->
+        <label for="text">Single click event</label>
+        <button onclick="myclick1()" id="click">Click here</button>
+    </div>
+
+    <div class="container">
+        <!-- On mouse out && on mouse over event -->
+        <label for="text">Mouse over and out event</label>
+        <button onmouseover="myclick2()" onmouseout="myclick3()" id="over">Mouse over</button>
+
+    </div>
+
+    <div class="container">
+        <!-- On blur event -->
+        <label for="text">Enter text to capitalize(onblur event)</label>
+        <input type="text" id="blur" onblur="myclick4()">
+        <button type="reset" id="reset" onclick="myreset()">Reset</button>
+
+    </div>
+
+    <div class="container">
+        <!-- On double click event -->
+        <label for="text">Mouse double click event</label>
+        <button ondblclick="myclick5()" id="dbclick">Double click me</button>
+
+    </div>
+
+    <div class="container1">
+        <div class="container">
+            <!-- fetching data from textBox -->
+            <label for="text">Fetching Datas from TextBox</label>
+            <textarea name="text" id="text" cols="30" rows="5" onblur="mytext()"></textarea>
+
+        </div>
+
+        <div class="container">
+            <label for="text">Your Text is:- </label>
+            <label id="textPrint"></label>
+
+        </div>
+        <button type="reset" id="reset" onclick="myreset()">Reset</button>
+    </div>
+</body>
+
+</html>

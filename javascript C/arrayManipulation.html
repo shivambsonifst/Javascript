@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Manipulation</title>
+
+    <style>
+        .container {
+            margin: 10px;
+            border: 1px solid grey;
+            padding: 10px;
+        }
+
+        table {
+
+
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th,
+        td {
+            padding: 5px;
+            border: 1px solid gray;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2>Array Manipulation</h2>
+    <div class="container">
+        <div class="container1">
+            <h2>Add data</h2>
+            <label for="text">Enter Product name:- </label>
+            <input type="text" name="productName" id="productName">
+            <button id="addProductName" onclick="addProductName()">Add Product</button>
+        </div>
+
+        <div class="container2">
+            <h3 id="dataMessage"></h3>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container2">
+            <h2>Search data</h2>
+            <label for="text">Search Product:- </label>
+            <input type="text" name="productName" id="searchProduct">
+            <button id="searchProductName" onclick="searchProductName()">Search</button>
+        </div>
+        <div class="container2">
+            <h3 id="searchMessage"></h3>
+            </div>
+    </div>
+    <div class="container">
+        <div class="container1">
+            <h2>Remove data</h2>
+            <label for="text">Remove Product:- </label>
+            <input type="text" name="productName" id="removeProduct">
+            <button id="removeProductName" onclick="removeProductName()">Delete</button>
+        </div>
+        <div class="container2">
+            <h3 id="removeMessage"></h3>
+            </div>
+    </div>
+    <div class="container">
+        <div class="container1">
+            <h2>Modify data</h2>
+            <label for="text">Modify Product:- </label>
+            <input type="text" name="productName" id="modifyProduct1">
+            <label for="text">TO</label>
+            <input type="text" name="productName" id="modifyProduct2">
+            <button id="modifyProductName" onclick="modifyProductName()">Modify</button>
+        </div>
+        <div class="container2">
+            <h3 id="modifyMessage"></h3>
+            <table id="modifyProductItems">
+            </table>
+        </div>
+    </div>
+<div class="container">
+    <h3>Output Table:- </h3>
+            <table id="mainTable">
+            </table>
+</div>
+
+
+    <script src="/javascript C/arrayManipulation.js"></script>
+</body>
+
+</html>

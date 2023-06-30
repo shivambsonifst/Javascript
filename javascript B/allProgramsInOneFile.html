@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/javascript B/allProgramsInOneFile.js"></script>
+    <title>All programs</title>
+    <style>
+        .container {
+            margin: 20px;
+            border: 1px solid grey;
+            padding: 10px;
+
+        }
+
+        .container2 {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>For Double Input</h2>
+        <label for="text">Enter range:- </label>
+        <input type="text" id="doubleInputNumber1" placeholder="Number 1" required>
+        <label for="text"> TO </label>
+        <input type="text" id="doubleInputNumber2" placeholder="Number 2" required>
+        <button type="submit" onclick="doubleFunction()">Check</button>
+        <button onclick="doubleFunctionReset()">Reset</button>
+        <div class="container2">
+            <p id="oddEvenoutput1"></p>
+            <p id="oddEvenoutput2"></p>
+            <p id="armstrongOutput"></p>
+            <p id="primeNumberOutput"></p>
+            <p id="swapOutput"></p>
+            
+        </div>
+    </div>
+    <div class="container">
+        <h2>For Single Input</h2>
+        <label for="text">Enter a number:- </label>
+        <input type="text" id="singleInputNumber" placeholder="Number 1" required>
+        <button type="submit" onclick="singleFunction()">Check</button>
+        <button onclick="singleFunctionReset()">Reset</button>
+        <div class="container2">
+            <p id="factorialOutput"></p>
+            <p id="fabinacciOutput"></p>
+            <p id="palindromeOutput"></p>
+            <p id="cubeOutput"></p>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Text Area Input</h2>
+        <div class="container1" style="display: flex; flex-direction: initial; margin: 10px;">
+            <label for="text" id="text">Enter You text :- </label>
+            <textArea id="textAreaInput" placeholder="Enter Your Text Here" style="margin-left: 5px;" cols="50"
+                rows="10"></textArea>
+            <button onclick="textAreaFunction()" style="margin: 10px;">Check</button>
+            <button onclick="textAreaFunctionReset()" style="margin: 10px;">Reset</button>
+        </div>
+        <div class="container2">
+
+            
+            <p id="vowelConsonentOutput1"></p>
+            <p id="vowelConsonentOutput2"></p>
+            <p id="countOutputText1"></p>
+            <p id="countOutputText2"></p>
+            <p id="countOutputText3"></p>
+        </div>
+    </div>
+
+</body>
+
+</html>

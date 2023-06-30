@@ -1,0 +1,14 @@
+"use strict";
+exports.__esModule = true;
+var export_1 = require("./export");
+var msg = (0, export_1["default"])();
+console.log("This message is from exports" + msg);
+var export_2 = require("./export");
+var obj1 = new export_2.greetings1();
+console.log(obj1.StringConcat("Company"));
+var AllInputs = require("./export");
+var str = "Shivam";
+var str1 = "Shivam Soni";
+console.log(AllInputs.Welcome(str));
+var obj = new AllInputs.Greets();
+console.log(obj.msg(str1));

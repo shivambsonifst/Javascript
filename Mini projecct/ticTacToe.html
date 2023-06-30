@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+    <title>Tic Tac Toe</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+    /* Heading */
+    h1 {
+        color: green;
+        font-size: 45px;
+    }
+
+    /* 3*3 Grid */
+    #input1, #input2, #input3, #input4, #input5, #input6,#input7,#input8,#input9 {
+        width: 80px;
+        height: 52px;
+        margin: 0px -2px; 
+        border: 1px solid gray;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    /* Reset Button */
+    #button {
+        box-sizing: border-box;
+        width: 95px;
+        height: 40px;
+        border: 1px solid black;
+        margin: auto;
+        border-radius: 4px;
+        background-color: white;
+        color: black;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    /* Player turn space */
+    #print {
+        color: black;
+        font-size: 20px;
+    }
+
+    /* Main Container */
+    #main {
+        text-align: center;
+    }
+
+    /* Game Instruction Text */
+    #instruction {
+       color: black;
+        font-size: 17px;
+    }
+</style>
+
+</head>
+
+<body>
+<div id="main">
+<h1>TIC TAC TOE</h1>
+
+    <!-- 3*3 grid of Boxes -->
+    <input type="text" id="input1" onclick="allInputFunction('input1'); myfunc();" readonly>
+    <input type="text" id="input2" onclick="allInputFunction('input2'); myfunc();" readonly>
+    <input type="text" id="input3" onclick="allInputFunction('input3'); myfunc();" readonly>
+    <br>
+    <input type="text" id="input4" onclick="allInputFunction('input4'); myfunc();" readonly>
+    <input type="text" id="input5" onclick="allInputFunction('input5'); myfunc();" readonly>
+    <input type="text" id="input6" onclick="allInputFunction('input6'); myfunc();" readonly>
+    <br>
+    <input type="text" id="input7" onclick="allInputFunction('input7'); myfunc();" readonly>
+    <input type="text" id="input8" onclick="allInputFunction('input8');myfunc();" readonly>
+    <input type="text" id="input9" onclick="allInputFunction('input9');myfunc();" readonly>
+
+    <br><br><br>
+
+    <!-- Button to start game -->
+    <button id="button" onclick="startButton()">Start</button>
+
+    <br><br>
+
+    <!-- Instruction of game -->
+    <p id="instruction">
+       First Player starts as <b>Player X</b>
+       <br> Second Player as <b>Player 0</b>
+    </p>
+    <!-- Space to show player turn -->
+    <p id="print"></p>
+
+</div>
+<script src="/Mini projecct/ticTacToe.js"></script>
+</body>
+
+</html>

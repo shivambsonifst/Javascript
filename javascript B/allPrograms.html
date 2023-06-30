@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/javascript B/allPrograms.js"></script>
+    <title>All programs</title>
+    <style>
+        .container {
+            margin: 20px;
+            border: 1px solid grey;
+            padding: 10px;
+
+        }
+
+        .container2 {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- For odd even  -->
+    <div class="container">
+        <h2>Odd & Even Numbers</h2>
+        <label for="text">Enter range check whether is is even or not:- </label>
+        <input type="number" id="oddEvenNumber1" placeholder="From number 1" required>
+        <label for="text"> TO </label>
+        <input type="number" id="oddEvenNumber2" placeholder="To number 2" required>
+        <button type="submit" onclick="evenOdd()">Check</button>
+        <button onclick="oddEvenresetFunc()">Reset</button>
+        <p id="oddEvenoutput1"></p>
+        <p id="oddEvenoutput2"></p>
+    </div>
+
+    <!-- For armstrong number series  -->
+    <div class="container">
+        <h2>Armstrong Number Series </h2>
+        <label for="text">Enter Number to check whether is armstrong's number or not:- </label>
+        <input type="number" id="armstrongNumber1" min="1" max="5" required>
+        <label for="text">TO</label>
+        <input type="number" id="armstrongNumber2" min="1" max="5" required>
+        <button onclick="armstrongFunc()">Check</button>
+        <button onclick="armstrongResetFunc()">Reset</button>
+        <p id="armstrongOutput"></p>
+    </div>
+
+    <!-- For Prime number series -->
+    <div class="container">
+        <div class="container1">
+            <h2>Prime Number Series </h2>
+            <label for="text">Enter Range to get prime numbers:- </label>
+            <input type="number" id="primeNumber1" placeholder="From">
+            <label for="text"> TO </label>
+            <input type="number" id="primeNumber2" placeholder="To">
+            <button onclick="primeNumber()">Check</button>
+            <button onclick="primeResetFunc()">Reset</button>
+        </div>
+        <div class="container2">
+            <textarea name="primeNumberOutput" id="primeNumberOutput" cols="50" rows="5"></textarea>
+        </div>
+    </div>
+
+    <!-- For Fcatorial number series -->
+    <div class="container">
+        <div class="container1">
+            <h2>Find Factorial of given Number</h2>
+            <label for="text">Enter Number to get factorial:- </label>
+            <input type="number" id="factorialNumber">
+            <button onclick="factorialFunc()">Check</button>
+            <button onclick="factoriaResetFunc()">Reset</button>
+        </div>
+        <div class="container2">
+            <textarea name="factorialOutput" id="factorialOutput" cols="50" rows="2"></textarea>
+        </div>
+    </div>
+
+    <!-- For Fabonacci number series -->
+    <div class="container">
+        <div class="container1">
+            <h2>Fabonacci number series</h2>
+            <label for="text">Enter Number a number for fabonacci series:- </label>
+            <input type="number" id="fabonacciNumber">
+            <button onclick="fabonacciSeries()">Check</button>
+            <button onclick="FabonacciResetFunc()">Reset</button>
+        </div>
+        <div class="container2">
+            <textarea name="fabinacciOutput" id="fabinacciOutput" cols="50" rows="10"></textarea>
+        </div>
+    </div>
+
+    <!-- For palindrome number  -->
+    <div class="container" style="margin: 20px;">
+        <div class="container1">
+            <h2>Check whether number is Palindrome number or not </h2>
+            <label for="text">Enter Number to check whether its is palindrome or not:- </label>
+            <input type="number" id="palindromeNumber">
+            <button onclick="palindromeNum()">Check</button>
+            <button onclick="palindromeResetFunc()">Reset</button>
+        </div>
+        <div class="container2">
+            <textarea name="palindromeOutput" id="palindromeOutput" cols="50" rows="2"></textarea>
+        </div>
+    </div>
+
+    <!-- For cube   -->
+    <div class="container" style="margin: 20px;">
+        <div class="container1">
+            <h2>Cube for given number</h2>
+            <label for="text">Enter Number to get cube of it:- </label>
+            <input type="number" id="cubeNumber">
+            <button onclick="cubeNum()">Check</button>
+            <button onclick="cubeResetFunc()">Reset</button>
+        </div>
+        <div class="container2">
+            <textarea name="cubeOutput" id="cubeOutput" cols="50" rows="2"></textarea>
+        </div>
+    </div>
+
+    <!-- For swapping numbers   -->
+    <div class="container">
+        <h2>Swapping of two numbers</h2>
+        <label for="text">Enter Numbers to swap :- </label>
+        <input type="number" id="swapNumber1" placeholder="number 1">
+        <label for="text"> Swap </label>
+        <input type="number" id="swapNumber2" placeholder="number 2">
+        <button onclick="swapNum()">Check</button>
+        <button onclick="swapResetFunc()">Reset</button>
+
+        <div class="container2">
+            <textarea name="swapOutput" id="swapOutput" cols="60" rows="2"></textarea>
+        </div>
+    </div>
+
+    <!-- For vowels and consonents   -->
+    <div class="container">
+        <h2>Find vowels and consonents from Text</h2>
+        <div class="container1" style="display: flex; flex-direction: initial; margin: 10px;">
+            <label for="text" id="text">Enter You text to get total number of vowel and consonents:- </label>
+            <textArea id="vowelConsonentInput" placeholder="Enter Your Text Here" style="margin-left: 5px;" cols="50"
+                rows="10"></textArea>
+            <button onclick="vowelCons()" style="margin: 10px;">Check</button>
+            <button onclick="vowelConsonentResetFunc()" style="margin: 10px;">Reset</button>
+        </div>
+        <div class="container2">
+            <p id="vowelConsonentOutput1"></p>
+            <p id="vowelConsonentOutput2"></p>
+        </div>
+    </div>
+
+    <!-- For Counting lines, space and words-->
+    <div class="container">
+        <h2>Find Counts of lines, space and words from Text</h2>
+        <div class="container1" style="display: flex; flex-direction: initial; margin: 10px;">
+            <label for="text" id="text">Enter You text to get total number of ine, Word & Spaces:- </label>
+            <textArea id="countOutputText" placeholder="Enter Your Text Here" style="margin-left: 5px;" rows="10"
+                cols="50"></textArea>
+            <button onclick="lineWordSpace()" style="margin: 10px;">Check</button>
+            <button onclick="countResetFunc()" style="margin: 10px;">Reset</button>
+        </div>
+        <div class="container2">
+            <p id="countOutputText1"></p>
+            <p id="countOutputText2"></p>
+            <p id="countOutputText3"></p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
